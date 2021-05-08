@@ -1,5 +1,17 @@
 $(function () {
+  const anchors = document.querySelectorAll('a[href*="#"]')
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
 
+      const blockID = anchor.getAttribute('href').substr(1)
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  }
   document.addEventListener('click', function (e) {
 
     //Всплывающия форма(попап)
@@ -50,6 +62,15 @@ $(function () {
       let menu = document.querySelector('.header__burger-menu');
       menu.classList.remove('header__burger-menu--active');
     }
+
+    document.querySelectorAll('.form__services-radio').forEach((e) => {
+      if (e.checked) {
+        document.querySelector('.form__contacts-block').setAttribute('style', 'display:flex;')
+        document.querySelector('.form__files').setAttribute('style', 'display:block;')
+        document.querySelector('.form__policy').setAttribute('style', 'display:block;')
+        document.querySelector('.main-form-btn').setAttribute('style', 'display:block;')
+      }
+    });
 
 
   });

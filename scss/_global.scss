@@ -108,7 +108,8 @@ section {
 	border: 1px solid #9090a9;
 	width: 100%;
 	color: #9090a9;
-
+	cursor: pointer;
+	transition: 0.3s;
 	&:hover {
 		background-color: #f3784d;
 		border: #f3784d 1px solid;
@@ -118,5 +119,117 @@ section {
 		color: #282828;
 		border: 1px solid #282828;
 		background-color: #fff;
+	}
+}
+.form {
+	max-width: 880px;
+	width: 100%;
+	&__services {
+		display: flex;
+		flex-direction: column;
+		&-block {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 80px;
+		}
+		&-radio {
+			display: none;
+		}
+		&-radio:checked + .form__services-item {
+			background-color: #f3784d;
+			color: #fafafa;
+		}
+		&-item {
+			user-select: none;
+			cursor: pointer;
+			padding: 15px 40px;
+			font-size: 15px;
+			line-height: 21px;
+			border: 1px solid #dadada;
+			border-radius: 3px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+		}
+	}
+	&__headline {
+		color: #9090a0;
+		font-size: 22px;
+		span {
+			font-size: 15px;
+			line-height: 21px;
+			margin-right: 10px;
+		}
+		margin-bottom: 40px;
+	}
+	&__contacts {
+		&-block {
+			display: none;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			label {
+				display: block;
+				font-size: 12px;
+				line-height: 12px;
+				margin-bottom: 5px;
+			}
+			&-item {
+				width: fit-content;
+				margin-bottom: 30px;
+			}
+		}
+		&-input {
+			width: 430px;
+			padding: 10px;
+			height: 50px;
+			border: 1px solid #DADADA;
+			border-radius: 3px;
+		}
+		&-text {
+			width: 880px;
+			padding: 15px;
+			border: 1px solid #DADADA;
+			border-radius: 3px;
+		}
+	}
+	&__files {
+		width: 170px;
+		height: 25px;
+		display: none;
+		margin-bottom: 80px;
+		img {
+			width: inherit;
+			height: inherit;
+		}
+	}
+	.btn {
+		width: fit-content;
+		text-transform: uppercase;
+	}
+	.form__policy {
+		display: none;
+	}
+}
+.main-form-btn {
+	display: none;
+}
+.page-numbers {
+	padding-bottom: 150px;
+	user-select: none;
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-item {
+		cursor: pointer;
+		margin-right: 25px;
+		color: #9090a0;
+		transition: 0.3s;
+		&:hover {
+			color: #f3784d;
+		}
+		&:last-child{
+			margin: 0;
+		}
 	}
 }

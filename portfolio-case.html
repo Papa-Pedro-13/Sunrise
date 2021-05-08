@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейс</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+  <section class="case">
+    <div class="container">
+      <div class="case__inner">
+        <div class="case__top">
+          <div class="links">
+            <a href="./index.html" class="links-item">
+              Главная
+            </a>
+            /
+            <a href="./portfolio.html" class="links-item">
+              Портфолио
+            </a>
+            /
+            <a href="#" class="links-item">
+              Система поиска
+            </a>
+          </div>
+          <h1 class="main-headline">Система поиска</h1>
+        </div>
+        <picture class="lazy">
+          <source srcset="" data-srcset="./images/webp/portfolio-large-1.webp" type="image/webp">
+          <source srcset="" data-srcset="./images/portfolio-large-1.png" type="image/png">
+          <img class="case__img" data-src="./images/portfolio-large-1.png" alt="">
+        </picture>
+        <div class="case__box">
+          <div class="case__box-data">
+            <div class="portfolio__date">
+              <span>
+                05
+              </span> <br>
+              04.2018
+            </div>
+            <div class="portfolio__subtext-desc">
+              <p class="portfolio__subtext-desc-item">
+                КСУБД
+              </p>
+              <p class="portfolio__subtext-desc-item">
+                Технологии проектирования и средства разработки
+              </p>
+            </div>
+          </div>
+          <div class="case__box-desc">
+            <p class="case__box-desc-text">
+              Нашими специалистами доработан пользовательский интерфейс Share и бизнес-логика системы управления
+              контентом Alfresco Community Edition 4.
+              <br>
+              <br>
+              Задача стояла заменить стандартный компонент построения выборки контента по категориям на новый. Компонент
+              должен был позволять выбирать несколько категорий для построения выборки контента.
+            </p>
+            <div class="case__box-desc-text">
+              <div class="title-item">
+                Доработаны возможности системы:
+              </div>
+              <ul class="case__box-desc-list">
+                <li class="case__box-desc-list-item">
+                  Фильтрация и поиск контента по нескольким категориям
+                </li>
+                <li class="case__box-desc-list-item">
+                  В расширенном поиске добавлена возможность объединения категории по условию «И»
+                </li>
+                <li class="case__box-desc-list-item">
+                  Добавлена возможность поиска по обратному условию (Условие «НЕ»: в данном случае будут показаны все
+                  документы для которых, наобот, не совпадает заданное условие поиска)
+                </li>
+              </ul>
+            </div>
+            <div class="case__box-desc-text">
+              <div class="title-item">
+                Технологии:
+              </div>
+              <ul class="case__box-desc-list">
+                <li class="case__box-desc-list-item">
+                  Alfresco
+                </li>
+                <li class="case__box-desc-list-item">
+                  Java
+                </li>
+                <li class="case__box-desc-list-item">
+                  Spring
+                </li>
+                <li class="case__box-desc-list-item">
+                  FreeMarker
+                </li>
+                <li class="case__box-desc-list-item">
+                  JS
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="request">
+    <div class="container">
+      <div class="request__inner">
+        <div class="title">
+          Оставить<br>
+          заявку
+        </div>
+        <form action="" method="POST" class="request-form form">
+          <div class="form__services">
+            <div class="form__headline">
+              <span>01</span>
+              Услуга
+            </div>
+            <div class="form__services-block">
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio1">
+              <label for="radio1" class="form__services-item">Разработка ПО на заказ</label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio2">
+              <label for="radio2" class="form__services-item">
+                Интеграция информационных систем / интеграционные шины
+              </label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio3">
+              <label for="radio3" class="form__services-item">
+                Движки бизнес процессов / автоматизация бизнес процессов
+              </label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio4">
+              <label for="radio4" class="form__services-item">Разработка Технического задания</label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio5">
+              <label for="radio5" class="form__services-item">
+                Проектирование архитектуры корпоративных информационных систем
+              </label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio6">
+              <label for="radio6" class="form__services-item">Аутсорсинг</label>
+            </div>
+          </div>
+          <div class="form__contacts">
+            <div class="form__headline">
+              <span>02</span>
+              Контакты
+            </div>
+            <div class="form__contacts-block">
+              <div class="form__contacts-block-item">
+                <label for="name">Имя</label>
+                <input type="text" class="form__contacts-input" name="name" id="name">
+              </div>
+
+              <div class="form__contacts-block-item">
+                <label for="compani">Компания</label>
+                <input type="text" class="form__contacts-input" name="name" id="compani">
+              </div>
+
+              <div class="form__contacts-block-item">
+                <label for="tel">Телефон</label>
+                <input type="tel" class="form__contacts-input" name="tel" id="tel">
+              </div>
+
+              <div class="form__contacts-block-item">
+                <label for="email">Почта</label>
+                <input type="email" class="form__contacts-input" name="email" id="email">
+              </div>
+
+              <div class="form__contacts-block-item">
+                <label for="text">Сообщение</label>
+                <textarea rows="10" name="name" style="resize: none;" class="form__contacts-text" id="text"></textarea>
+              </div>
+
+            </div>
+            <a href="#" class="form__files" onclick="return false">
+              <img src="./images/files.svg" alt="">
+            </a>
+            <div class="form__policy">
+              <input type="checkbox" class="policy__input" id="policy2">
+              <label for="policy2" class="policy__label">
+                Принимаю условия политики конфиденциальности
+              </label>
+            </div>
+            <button type="submit" class="btn main-form-btn">
+              оставить заявку
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/lazy-loading.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+
+</html>

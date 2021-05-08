@@ -24,7 +24,7 @@
           <a class="header__nav-item" href="#about">О компaнии</a>
           <a class="header__nav-item" href="#services">Услуги</a>
           <a class="header__nav-item" href="#portfolio">Портфолио</a>
-          <a class="header__nav-item" href="#contacts">Контакты</a>
+          <a class="header__nav-item" href="./contacts.html">Контакты</a>
         </ul>
         <div class="header__burger">
           <span> </span>
@@ -38,7 +38,7 @@
         <a class="header__burger-menu-link" href="#about">О компaнии</a>
         <a class="header__burger-menu-link" href="#services">Услуги</a>
         <a class="header__burger-menu-link" href="#portfolio">Портфолио</a>
-        <a class="header__burger-menu-link" href="#">Контакты</a>
+        <a class="header__burger-menu-link" href="./contacts.html">Контакты</a>
       </div>
     </div>
   </div>
@@ -70,18 +70,18 @@
         Оставте свой номер, мы обязательно перезвоним вам в ближайшее время
       </div>
       <form action="#" method="POST" id="popup__form">
-        <label for="#name" class="popup__label">Имя</label>
+        <label for="name" class="popup__label">Имя</label>
         <input type="text" class="popup__input validate" id="name">
 
         <label for="tel" class="popup__label">Телефон</label>
         <input type="tel" class="popup__input validate" id="tel">
 
-        <label for="#email" class="popup__label">Почта</label>
-        <input type="text" class="popup__input validate" id="email">
+        <label for="email" class="popup__label">Почта</label>
+        <input type="email" class="popup__input validate" id="email">
 
         <div class="form__policy">
-          <input type="checkbox" class="policy__input">
-          <label for="" class="policy__label">
+          <input type="checkbox" class="policy__input" id="policy1">
+          <label for="policy1" class="policy__label">
             Принимаю условия политики конфиденциальности
           </label>
         </div>
@@ -315,59 +315,213 @@
         <a href="./portfolio.html" class="portfolio__link link-all">Все проекты</a>
       </div>
       <div class="portfolio__box">
-        <div class="portfolio__item">
-          <picture class="lazy">
-            <source srcset="" data-srcset="./images/webp/portfolio-1.webp" type="image/webp">
-            <source srcset="" data-srcset="./images/portfolio-1.png" type="image/png">
-            <img class="portfolio__img" data-src="./images/portfolio-1.png" alt="">
-          </picture>
-          <div class="portfolio__text">
-            <div class="portfolio-title title-item">Система поиска </div>
-            <p class="portfolio__subtitle">Нашими специалистами доработан пользовательский интерфейс Share и
-              бизнес-лог...</p>
-            <a href="#" class="portfolio__detailed detailed">Подробнее</a>
-          </div>
-          <div class="portfolio__subtext">
-            <div class="portfolio__date">
-              <span>05</span> <br>
-              04.2018
+        <div class="portfolio-slider-item">
+          <div class="portfolio__item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/portfolio-1.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/portfolio-1.png" type="image/png">
+              <img class="portfolio__img" data-src="./images/portfolio-1.png" alt="">
+            </picture>
+            <div class="portfolio__text">
+              <div class="portfolio-title title-item">Система поиска </div>
+              <p class="portfolio__subtitle">Нашими специалистами доработан пользовательский интерфейс Share и
+                бизнес-лог...</p>
+              <a href="#" class="portfolio__detailed detailed">Подробнее</a>
             </div>
-            <div class="portfolio__subtext-desc">
-              <p class="portfolio__subtext-desc-item">КСУБД</p>
-              <p class="portfolio__subtext-desc-item">Технологии проектирования и средства разработки</p>
+            <div class="portfolio__subtext">
+              <div class="portfolio__date">
+                <span>05</span> <br>
+                04.2018
+              </div>
+              <div class="portfolio__subtext-desc">
+                <p class="portfolio__subtext-desc-item">КСУБД</p>
+                <p class="portfolio__subtext-desc-item">Технологии проектирования и средства разработки</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/portfolio-2.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/portfolio-2.png" type="image/png">
+              <img class="portfolio__img" data-src="./images/portfolio-2.png" alt="">
+            </picture>
+            <div class="portfolio__text">
+              <div class="portfolio-title title-item">Сервис управления заявками (4,5 мес разработки)</div>
+              <p class="portfolio__subtitle">
+                Система межведомственного электронного взаимодействия (СВЭМ), которая
+                используется...
+              </p>
+              <a href="#" class="portfolio__detailed detailed">Подробнее</a>
+            </div>
+            <div class="portfolio__subtext">
+              <div class="portfolio__date">
+                <span>15</span> <br>
+                03.2018
+              </div>
+              <div class="portfolio__subtext-desc">
+                <p class="portfolio__subtext-desc-item">PHP</p>
+                <p class="portfolio__subtext-desc-item">Десктоп</p>
+                <p class="portfolio__subtext-desc-item">Web</p>
+                <p class="portfolio__subtext-desc-item">Технологические решения</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="portfolio__item">
-          <picture class="lazy">
-            <source srcset="" data-srcset="./images/webp/portfolio-2.webp" type="image/webp">
-            <source srcset="" data-srcset="./images/portfolio-2.png" type="image/png">
-            <img class="portfolio__img" data-src="./images/portfolio-2.png" alt="">
-          </picture>
-          <div class="portfolio__text">
-            <div class="portfolio-title title-item">Сервис управления заявками (4,5 мес разработки)</div>
-            <p class="portfolio__subtitle">
-              Система межведомственного электронного взаимодействия (СВЭМ), которая
-              используется...
-            </p>
-            <a href="#" class="portfolio__detailed detailed">Подробнее</a>
-          </div>
-          <div class="portfolio__subtext">
-            <div class="portfolio__date">
-              <span>15</span> <br>
-              03.2018
+
+        <div class="portfolio-slider-item">
+          <div class="portfolio__item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/portfolio-3.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/portfolio-3.png" type="image/png">
+              <img class="portfolio__img" data-src="./images/portfolio-3.png" alt="">
+            </picture>
+            <div class="portfolio__text">
+              <div class="portfolio-title title-item">
+                Farbe
+              </div>
+              <p class="portfolio__subtitle">
+                Сделали сайт с просто невероятной карточкой товара для крутого производителя штукатур...
+              </p>
+              <a href="#" class="portfolio__detailed detailed">Подробнее</a>
             </div>
-            <div class="portfolio__subtext-desc">
-              <p class="portfolio__subtext-desc-item">PHP</p>
-              <p class="portfolio__subtext-desc-item">Десктоп</p>
-              <p class="portfolio__subtext-desc-item">Web</p>
-              <p class="portfolio__subtext-desc-item">Технологические решения</p>
+            <div class="portfolio__subtext">
+              <div class="portfolio__date">
+                <span>
+                  28
+                </span> <br>
+                02.2018
+              </div>
+              <div class="portfolio__subtext-desc">
+                <p class="portfolio__subtext-desc-item">
+                  C#
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Десктоп
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Платформы
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Специализированные технологии
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/portfolio-4.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/portfolio-4.png" type="image/png">
+              <img class="portfolio__img" data-src="./images/portfolio-4.png" alt="">
+            </picture>
+            <div class="portfolio__text">
+              <div class="portfolio-title title-item">
+                Глазная клиника 3Z
+              </div>
+              <p class="portfolio__subtitle">
+                Яркий сайт для крупнейшей федеральной сети клиник заботы о зрении с крутой версией для...
+              </p>
+              <a href="#" class="portfolio__detailed detailed">Подробнее</a>
+            </div>
+            <div class="portfolio__subtext">
+              <div class="portfolio__date">
+                <span>
+                  28
+                </span> <br>
+                02.2018
+              </div>
+              <div class="portfolio__subtext-desc">
+                <p class="portfolio__subtext-desc-item">
+                  КСУБД
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Технологии проектирования и средства разработки
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <a href="./portfolio.html" class="portfolio-btn btn">
+        <div class="portfolio-slider-item">
+          <div class="portfolio__item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/portfolio-5.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/portfolio-5.png" type="image/png">
+              <img class="portfolio__img" data-src="./images/portfolio-5.png" alt="">
+            </picture>
+            <div class="portfolio__text">
+              <div class="portfolio-title title-item">
+                Мебель «ЧУ»
+              </div>
+              <p class="portfolio__subtitle">
+                Компания «ЧУ» делает мебель. Их фирменное блюдо — современные дизайнерские кух...
+              </p>
+              <a href="#" class="portfolio__detailed detailed">Подробнее</a>
+            </div>
+            <div class="portfolio__subtext">
+              <div class="portfolio__date">
+                <span>
+                  22
+                </span> <br>
+                08.2018
+              </div>
+              <div class="portfolio__subtext-desc">
+                <p class="portfolio__subtext-desc-item">
+                  PHP
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Десктоп
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Web
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Технологические решения
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/portfolio-6.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/portfolio-6.png" type="image/png">
+              <img class="portfolio__img" data-src="./images/portfolio-6.png" alt="">
+            </picture>
+            <div class="portfolio__text">
+              <div class="portfolio-title title-item">
+                Орматек
+              </div>
+              <p class="portfolio__subtitle">
+                Интернет–магазин ведущего бренда товаров для комфортного сна, рассчитанный на действите...
+              </p>
+              <a href="#" class="portfolio__detailed detailed">Подробнее</a>
+            </div>
+            <div class="portfolio__subtext">
+              <div class="portfolio__date">
+                <span>
+                  23
+                </span> <br>
+                08.2017
+              </div>
+              <div class="portfolio__subtext-desc">
+                <p class="portfolio__subtext-desc-item">
+                  C#
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Десктоп
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Платформы
+                </p>
+                <p class="portfolio__subtext-desc-item">
+                  Специализированные технологии
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <a href="./portfolio.html" class="portfolio-btn btn">
           Смотреть ещё
-        </a>
+        </a> -->
       </div>
     </div>
   </section>
@@ -541,7 +695,94 @@
   </section>
 
 
-  <section class=""></section>
+  <section class="request">
+    <div class="container">
+      <div class="request__inner">
+        <div class="title">
+          Оставить<br>
+          заявку
+        </div>
+        <form action="" method="POST" class="request-form form">
+          <div class="form__services">
+            <div class="form__headline">
+              <span>01</span>
+              Услуга
+            </div>
+            <div class="form__services-block">
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio1">
+              <label for="radio1" class="form__services-item">Разработка ПО на заказ</label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio2">
+              <label for="radio2" class="form__services-item">
+                Интеграция информационных систем / интеграционные шины
+              </label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio3">
+              <label for="radio3" class="form__services-item">
+                Движки бизнес процессов / автоматизация бизнес процессов
+              </label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio4">
+              <label for="radio4" class="form__services-item">Разработка Технического задания</label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio5">
+              <label for="radio5" class="form__services-item">
+                Проектирование архитектуры корпоративных информационных систем
+              </label>
+
+              <input type="radio" name="tab-group" class="form__services-radio" id="radio6">
+              <label for="radio6" class="form__services-item">Аутсорсинг</label>
+            </div>
+          </div>
+          <div class="form__contacts">
+            <div class="form__headline">
+              <span>02</span>
+              Контакты
+            </div>
+            <div class="form__contacts-block">
+              <div class="form__contacts-block-item">
+                <label for="name">Имя</label>
+                <input type="text" class="form__contacts-input" name="name" id="name">
+              </div>
+
+              <div class="form__contacts-block-item">
+                <label for="compani">Компания</label>
+                <input type="text" class="form__contacts-input" name="name" id="compani">
+              </div>
+
+              <div class="form__contacts-block-item">
+                <label for="tel">Телефон</label>
+                <input type="tel" class="form__contacts-input" name="tel" id="tel">
+              </div>
+
+              <div class="form__contacts-block-item">
+                <label for="email">Почта</label>
+                <input type="email" class="form__contacts-input" name="email" id="email">
+              </div>
+
+              <div class="form__contacts-block-item">
+                <label for="text">Сообщение</label>
+                <textarea rows="10" name="name" style="resize: none;" class="form__contacts-text" id="text"></textarea>
+              </div>
+
+            </div>
+            <a href="#" class="form__files" onclick="return false">
+              <img src="./images/files.svg" alt="">
+            </a>
+            <div class="form__policy">
+              <input type="checkbox" class="policy__input" id="policy2">
+              <label for="policy2" class="policy__label">
+                Принимаю условия политики конфиденциальности
+              </label>
+            </div>
+            <button type="submit" class="btn main-form-btn">
+              оставить заявку
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
 
   <section class="blog">
@@ -551,14 +792,14 @@
           <div class="title">
             Наш блог
           </div>
-          <a href="#" class="blog__link link-all">Все статьи</a>
+          <a href="./blog.html" class="blog__link link-all">Все статьи</a>
         </div>
         <div class="blog-slider">
           <div class="blog-slider-item">
             <picture class="lazy">
-              <source srcset="" data-srcset="./images/webp/blog-img.webp" type="image/webp">
-              <source srcset="" data-srcset="./images/blog-img.png" type="image/png">
-              <img class="blog__img" data-src="./images/blog-img.png" alt="">
+              <source srcset="" data-srcset="./images/webp/blog-img-1.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/blog-img-1.png" type="image/png">
+              <img class="blog__img" data-src="./images/blog-img-1.png" alt="">
             </picture>
             <div class="blog-slider-item-desc">
               <div class="tags">
@@ -580,23 +821,107 @@
           </div>
           <div class="blog-slider-item">
             <picture class="lazy">
-              <source srcset="" data-srcset="./images/webp/blog-img.webp" type="image/webp">
-              <source srcset="" data-srcset="./images/blog-img.png" type="image/png">
-              <img class="blog__img" data-src="./images/blog-img.png" alt="">
+              <source srcset="" data-srcset="./images/webp/blog-img-2.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/blog-img-2.png" type="image/png">
+              <img class="blog__img" data-src="./images/blog-img-2.png" alt="">
             </picture>
             <div class="blog-slider-item-desc">
               <div class="tags">
+                <div class="tags-item">#Yii</div>
+                <div class="tags-item">#Angular</div>
+                <div class="tags-item">#PHP</div>
+                <div class="tags-item">#портфолио</div>
+              </div>
+              <div class="blog__title title-item">
+                Транспортный портал
+              </div>
+              <p class="blog-text">
+                Корпоративный портал федерального ретейлера и производителя строительных материалов для размещения и
+                обработка заявок на грузоперевозки
+              </p>
+              <div class="blog__date">
+                15.03.2018
+              </div>
+              <a href="#" class="blog__detailed detailed">Подробнее</a>
+            </div>
+          </div>
+          <div class="blog-slider-item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/blog-img-3.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/blog-img-3.png" type="image/png">
+              <img class="blog__img" data-src="./images/blog-img-3.png" alt="">
+            </picture>
+            <div class="blog-slider-item-desc">
+              <div class="tags">
+                <div class="tags-item">#Java</div>
+                <div class="tags-item">#портфолио</div>
+                <div class="tags-item">#BIRT</div>
+                <div class="tags-item">#Alfresco</div>
+                <div class="tags-item">#отчёты</div>
+                <div class="tags-item">#report-generation</div>
+              </div>
+              <div class="blog__title title-item">
+                Интеграция генератора отчетов BIRT в Alfresco
+              </div>
+              <p class="blog-text">
+                При всем богатстве функциональных возможностей ECM Alfresco не обладает собственными средствами
+                генерации
+                отчетов, а разнообразные генераторы отчетов не могут напрямую обращаться...
+              </p>
+              <div class="blog__date">
+                28.02.2018
+              </div>
+              <a href="#" class="blog__detailed detailed">Подробнее</a>
+            </div>
+          </div>
+          <div class="blog-slider-item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/blog-img-4.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/blog-img-4.png" type="image/png">
+              <img class="blog__img" data-src="./images/blog-img-4.png" alt="">
+            </picture>
+            <div class="blog-slider-item-desc">
+              <div class="tags">
+                <div class="tags-item">#портфолио</div>
+                <div class="tags-item">#Java</div>
+                <div class="tags-item">#Groovy</div>
                 <div class="tags-item">#Mule-ESB</div>
                 <div class="tags-item">#интеграционная-шина</div>
               </div>
               <div class="blog__title title-item">
-                Что такое Mule ESB?
+                Интеграция корпоративных информационных систем с помощью Mule ESB
               </div>
               <p class="blog-text">
-                Mule ESB — это легковесная интеграц...
+                По мере роста у большинства компаний накапливается множество информационных систем, как собственной
+                разработки, так и сторонних сервисов, с помощью которых они организуют свою работу. В определ...
               </p>
               <div class="blog__date">
-                05.04.2018
+                28.02.2018
+              </div>
+              <a href="#" class="blog__detailed detailed">Подробнее</a>
+            </div>
+          </div>
+          <div class="blog-slider-item">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/blog-img-5.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/blog-img-5.png" type="image/png">
+              <img class="blog__img" data-src="./images/blog-img-5.png" alt="">
+            </picture>
+            <div class="blog-slider-item-desc">
+              <div class="tags">
+                <div class="tags-item">#портфолио</div>
+                <div class="tags-item">#PHP</div>
+                <div class="tags-item">#Yii</div>
+              </div>
+              <div class="blog__title title-item">
+                Программное обеспечение подбора комплектации стеллажных систем
+              </div>
+              <p class="blog-text">
+                При подборе стеллажных систем для магазина менеджер компании должен постоянно держать в уме множество
+                условий: какая база используется для стеллажа, какие стеллажи могут соединятся между...
+              </p>
+              <div class="blog__date">
+                22.02.2018
               </div>
               <a href="#" class="blog__detailed detailed">Подробнее</a>
             </div>
@@ -610,21 +935,29 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <a class="logo" href="./index.html">
-          <picture class="lazy">
-            <source srcset="" data-srcset="./images/webp/footer-logo.webp" type="image/webp">
-            <source srcset="" data-srcset="./images/footer-logo.png" type="image/png">
-            <img class="portfolio__img" data-src="./images/footer-logo.png" alt="">
-          </picture>
-        </a>
-        <ul class="footer__nav">
-          <a class="footer__nav-list" href="#about">О компaнии</a>
-          <a class="footer__nav-list" href="#services">Услуги</a>
-          <a class="footer__nav-list" href="#portfolio">Портфолио</a>
-          <a class="footer__nav-list" href="#contacts">Контакты</a>
-        </ul>
+        <div class="footer__top">
+          <a class="logo" href="./index.html">
+            <picture class="lazy">
+              <source srcset="" data-srcset="./images/webp/footer-logo.webp" type="image/webp">
+              <source srcset="" data-srcset="./images/footer-logo.png" type="image/png">
+              <img class="footer__img" data-src="./images/footer-logo.png" alt="">
+            </picture>
+          </a>
+          <a href="mailto:info@sunrise-r.ru" class="footer__email footer__top-email">info@sunrise-r.ru</a>
+        </div>
+        <div class="footer__nav-block">
+          <div class="footer__headline">МЕНЮ</div>
+          <ul class="footer__nav">
+            <a class="footer__nav-list" href="#about">О компaнии</a>
+            <a class="footer__nav-list" href="#services">Услуги</a>
+            <a class="footer__nav-list" href="#portfolio">Портфолио</a>
+            <a class="footer__nav-list" href="./contacts.html">Контакты</a>
+          </ul>
+        </div>
+
         <div class="footer__info">
-          <a href="mailto:info@sunrise-r.ru" class="footer__email">info@sunrise-r.ru</a>
+          <a href="mailto:info@sunrise-r.ru" class="footer__email footer__info-email">info@sunrise-r.ru</a>
+          <div class="footer__headline">АДРЕС</div>
           <div class="footer__info-address">
             <div class="footer__info-address-item address-item">
               <div class="address-item__title title-m">Москва</div>
@@ -647,6 +980,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="footer__made">
+        <div class="footer__made-rights">© 2021, САНРАЙС РЕСУРС. Все права сохранены</div>
+        <div class="footer__made-ship">Сделано на Корабле</div>
       </div>
     </div>
   </footer>
@@ -672,6 +1009,10 @@
   $('.blog-slider').slick({
     infinite: false,
   });
+  $('.portfolio__box').slick({
+    infinite: false,
+  });
+
 
 </script>
 
